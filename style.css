@@ -1,0 +1,133 @@
+:root{
+    --white:hsl(0,0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+    --font-heading: 'Young Serif', serif;
+    --font-body: 'Outfit', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--stone-100);
+    display: flex;
+    padding: clamp(1rem, 4vw, 3rem);
+    justify-content: center;
+    min-height: 100dvh;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--font-body);
+    color: var(--stone-600);
+}
+
+.card {
+    background-color: var(--white);
+    max-width: 46rem;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    display: block;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    color: var(--stone-900);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-family: var(--font-heading);
+    color: var(--brown-800);
+    margin-bottom: 1rem;
+}
+
+.preparation-time{
+    background-color: var(--rose-50);
+    padding: 1.5rem;
+    margin:2rem 0;
+    border-radius: 0.75rem;
+}
+
+.preparation-time p{
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--rose-800);
+    padding-bottom: 1rem;
+}
+ul, ol{
+    padding-left: 1.25rem;
+}
+
+li{
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.preparation-time li::marker{
+    color: var(--rose-800);
+}
+
+.ingredients li::marker{
+    color: var(--brown-800);
+}
+.instructions li::marker{
+    color: var(--brown-800);
+    font-weight: 700;
+}
+
+.nutrition table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.nutrition tr{
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition tr:last-child{
+    border-bottom: none;
+}
+
+.nutrition th,
+.nutrition td{
+    padding: 0.75rem 2rem;
+    text-align: left;
+}
+
+.nutrition th{
+    font-weight: 400;
+    color: var(--stone-600);
+}
+
+.nutrition td{
+    font-weight: 700;
+    color: var(--brown-800);
+}
+
+hr {
+  border: none;                            
+  border-top: 1px solid var(--stone-150);    
+  margin: 2rem 0;  
+}
+
+footer{
+    padding-top: 1rem;
+}
